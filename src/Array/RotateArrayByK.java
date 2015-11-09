@@ -2,8 +2,9 @@ package Array;
 
 public class RotateArrayByK {
 
+
 	public void rotate(int[] nums, int k){
-		if(nums.length == 0)
+		if(nums.length == 0 || k == 0 || k == nums.length)
 			return ;
 		
 		swap(nums,0,nums.length-1);
